@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".Fragment.FragmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1A1A2E"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HeroApp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#E94560"
+            android:popupBackground="#2D3047" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1A1A2E" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2D3047"
+        app:tabIndicatorColor="#E94560"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#B8B8B8">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>
