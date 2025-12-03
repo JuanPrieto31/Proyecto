@@ -82,11 +82,15 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (success) {
                                 Toast.makeText(LoginActivity.this, "¡Bienvenido!", Toast.LENGTH_SHORT).show();
+
                                 SharedPreferences sharedPreferences = getSharedPreferences("prefs", MODE_PRIVATE);
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
+
                                 editor.putString("correo", correo);
+                                editor.putBoolean("isLoggedIn", true);
                                 editor.apply();
-                                try {
+
+                            try {
                                     Intent intent = new Intent(LoginActivity.this, FragmentActivity.class);
                                     startActivity(intent);
                                     finish();

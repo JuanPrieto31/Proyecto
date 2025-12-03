@@ -94,4 +94,5 @@ public class FragmentActivity extends AppCompatActivity {
         editor.putBoolean("isLoggedIn", false);
         editor.apply();
     }
+
 }
