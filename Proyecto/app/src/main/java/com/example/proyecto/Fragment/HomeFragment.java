@@ -94,7 +94,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void cargarHeroes() {
-        for (int id = 1; id <= 100; id++) {
+        for (int id = 1; id <= 30; id++) {
             StringRequest request = new StringRequest(Request.Method.GET, BASE_URL + id,
                     response -> {
                         try {

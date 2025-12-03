@@ -80,7 +80,7 @@ public class HeroeAdaptador extends RecyclerView.Adapter<HeroeAdaptador.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView characterThumbnail;
-        TextView characterName, characterDescription;
+        TextView characterName;
         TextView characterPower, characterPublisher, characterOrigin, characterComics;
 
         public ViewHolder(@NonNull View itemView) {

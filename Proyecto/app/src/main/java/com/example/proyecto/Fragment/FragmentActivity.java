@@ -72,6 +72,9 @@ public class FragmentActivity extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
                     case 1:
+                        fragment = new CharacterFragment();
+                        break;
+                    case 2:
                         fragment = new SettingsFragment();
                         break;
                 }
